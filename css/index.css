@@ -22,13 +22,13 @@ p, li {
 }
 
 .content .big-title {
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid black;
     line-height: 32px;
     margin-bottom: 8px;
 }
 
 .content .medium-title {
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid black;
     line-height: 24px;
     margin-bottom: 8px;
 }

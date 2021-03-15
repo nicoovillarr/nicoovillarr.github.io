@@ -18,7 +18,6 @@ loadJSON("descriptions.json", x => {
         li.setAttribute("onclick", "ShowDesc(\"" + i + "\")")
         list.appendChild(li)
     }
-    console.log(json)
 }, y => {
     ShowConfirm({
         title: "Ups",

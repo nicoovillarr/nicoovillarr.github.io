@@ -16,6 +16,8 @@
     font-weight: lighter;
     color: lightgray;
     cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
     transition: color .25;
 }
 

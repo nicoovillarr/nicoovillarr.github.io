@@ -33,6 +33,10 @@ p, li {
     margin-bottom: 8px;
 }
 
+.content p {
+    text-align: justify;
+}
+
 .content #list {
     list-style: none;
 }

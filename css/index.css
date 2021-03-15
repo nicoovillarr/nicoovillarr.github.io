@@ -33,6 +33,12 @@ p, li {
     margin-bottom: 8px;
 }
 
+.content .small-title {
+    border-bottom: 1px solid gray;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
 .content p {
     text-align: justify;
 }

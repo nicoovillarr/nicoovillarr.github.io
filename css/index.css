@@ -21,6 +21,18 @@ p, li {
     padding-top: 80px;
 }
 
+.content .big-title {
+    border-bottom: 2px solid gray;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.content .medium-title {
+    border-bottom: 2px solid gray;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
 .content p {
     text-align: justify;
 }

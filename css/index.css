@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, li {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.content .quote {
+    border-left: 8px solid orange;
+    background-color: #dcdcdc;
+    padding: 16px 32px;
+    margin: 8px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.content .quote .msg {
+    color: #8a8a8a;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.content .quote .author {
+    color: #8a8a8a;
+    opacity: 0.5;
+    text-decoration: none;
+    transition: opacity .25s;
+    font-size: 14px;
+    width: 100%;
+    text-align: right;
+    display: block;
+}
+
+.content .quote .author:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.content .projects {
+    margin-top: 32px;
+}
+
+.content .projects ul {
+    list-style: none;
+}
+
+.content .projects ul li {
+    display: flex;
+    justify-content: space-between;
+    line-height: 64px;
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all .2s;
+}
+
+.content .projects ul li:hover {
+    color: black;
+    background-color: #dcdcdc;
+}
+
+.content .projects ul li:hover .controls a {
+    opacity: .5;
+}
+
+.content .projects ul li .controls a {
+    display: inline-block;
+    background-color: skyblue;
+    border-radius: 8px;
+    color: white;
+    line-height: 48px;
+    padding: 0 12px;
+    border-bottom: 4px solid #4d8ca5;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.content .projects ul li .controls a:hover {
+    opacity: 1;
+}

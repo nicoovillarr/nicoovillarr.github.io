@@ -6,10 +6,10 @@ loadJSON("descriptions.json", x => {
         json.push(x[i])
 
         if (!x[i].hasOwnProperty("name") || !x[i].hasOwnProperty("desc") || !x[i].hasOwnProperty("reference")) {
-            ShowConfirm({
+            new UIAlert({
                 title: "Ups",
                 message: "Item at line " + ((i * 5) + 2) + " is not well-formatted. Item will be skipped."
-            })
+            }).Show()
             continue
         }
 
@@ -19,14 +19,14 @@ loadJSON("descriptions.json", x => {
         list.appendChild(li)
     }
 }, y => {
-    ShowConfirm({
+    new UIAlert({
         title: "Ups",
         message: "There was a problem while getting the resources."
-    })
+    }).Show()
 })
 
 function SeeMore () {
-    ShowConfirm({
+    new UIAlert({
         title: "Redirect",
         message: "You will be redirected to an other web page.",
         actions: [
@@ -40,12 +40,12 @@ function SeeMore () {
                 value: "Cancel"
             }
         ]
-    })
+    }).Show()
 }
 
 function ShowDesc (elem) {
     if (!json.hasOwnProperty(elem)) {
-        ShowConfirm({
+        new UIAlert({
             title: "Ups",
             message: "We couldn't find any description for \"" + json[elem]["name"] + "\".",
             actions: [
@@ -59,10 +59,10 @@ function ShowDesc (elem) {
                     }
                 }
             ]
-        })
+        }).Show()
         return
     }
-    ShowConfirm({
+    new UIAlert({
         title: json[elem]["name"],
         message: json[elem]["desc"],
         actions: [
@@ -73,7 +73,7 @@ function ShowDesc (elem) {
                 }
             }
         ]
-    })
+    }).Show()
 }
 
 function loadJSON(path, success, error)

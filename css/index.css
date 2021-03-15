@@ -18,6 +18,7 @@ p, li {
 .content {
     width: 90%;
     margin: auto;
+    padding-top: 80px;
 }
 
 .content p {
@@ -56,7 +57,7 @@ p, li {
 }
 
 .content .projects {
-    margin-top: 32px;
+    margin: 32px 0;
 }
 
 .content .projects ul {
@@ -66,6 +67,7 @@ p, li {
 .content .projects ul li {
     display: flex;
     justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
     line-height: 64px;
     font-size: 24px;
     color: gray;
@@ -73,7 +75,18 @@ p, li {
     padding: 16px;
     text-decoration: none;
     border-radius: 8px;
+    text-transform: uppercase;
     transition: all .2s;
+}
+
+.content .projects ul li i {
+    font-size: 24px;
+}
+
+.content .projects ul li p {
+    margin-left: 8px;
+    text-transform: none;
+    display: inline-block;
 }
 
 .content .projects ul li:hover {
@@ -100,4 +113,29 @@ p, li {
 
 .content .projects ul li .controls a:hover {
     opacity: 1;
+}
+
+@media (max-width: 800px) {
+    .content .projects ul li {
+        font-size: 21px;
+    }
+
+    .content .projects ul li p {
+        display: none;
+    }
+
+    .content .projects ul li .controls a {
+        padding: 8px 12px;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .content .projects ul li {
+        font-size: 18px;
+    }
+
+    .content .projects ul li p {
+        display: none;
+    }
 }

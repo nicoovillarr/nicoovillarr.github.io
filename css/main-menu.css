@@ -1,10 +1,12 @@
 .nav {
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #2b2b2b;
     color: white;
     padding: 0 16px;
+    z-index: 1000;
 }
 
 .nav .nav-title {
@@ -21,6 +23,17 @@
     color: white;
 }
 
+.nav label {
+    display: none;
+    cursor: pointer;
+    padding: 0 16px;
+}
+
+.nav label i {
+    line-height: 64px;
+    font-size: 24px;
+}
+
 .nav ul {
     list-style: none;
 }
@@ -30,7 +43,7 @@
 }
 
 .nav ul li a {
-    display: block;
+    display: inline-block;
     line-height: 64px;
     color: lightgray;
     text-decoration: none;
@@ -41,10 +54,51 @@
 }
 
 .nav ul li a i {
-    display: block;
+    display: inline-block;
     line-height: 64px;
 }
 
 .nav ul li a:hover {
     color: white
+}
+
+.nav ul li .item-text {
+    margin: 0;
+    margin-left: 4px;
+    display: none;
+}
+
+@media (max-width: 500px) {
+    #main-menu-check:checked ~ .nav ul {
+        height: 200px;
+    }
+
+    .nav label {
+        display: block;
+    }
+
+    .nav ul {
+        position: absolute;
+        display: block;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #2b2b2b;
+        overflow: hidden;
+        transition: all .2s;
+    }
+
+    .nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        width: 100%;
+    }
+
+    .nav ul li .item-text {
+        display: inline-block;
+    }
 }
